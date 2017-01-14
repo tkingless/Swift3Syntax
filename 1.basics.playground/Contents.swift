@@ -1,5 +1,7 @@
 import UIKit
 
+//source: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309
+
 //Constants and variables must be declared before they are used. You declare constants with the let keyword and variables with the var keyword.
 
 let maximumNumberOfLoginAttempts = 10
