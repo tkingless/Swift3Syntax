@@ -29,3 +29,18 @@ print(friendlyWelcome)
 print("The current value of friendlyWelcome is \(friendlyWelcome)")
 // Prints "The current value of friendlyWelcome is Bonjour!"
 
+/* This is also a comment
+ but is written over multiple lines. */
+
+//Unlike many other languages, Swift does not require you to write a semicolon (;) after each statement in your code, although you can do so if you wish. However,
+let cat = "🐱"; print(cat)
+
+//You can access the minimum and maximum values of each integer type with its min and max properties
+let minValue = UInt8.min  // minValue is equal to 0, and is of type UInt8
+let maxValue = UInt8.max  // maxValue is equal to 255, and is of type UInt8
+
+//On a 32-bit platform, Int is the same size as Int32.
+//On a 64-bit platform, Int is the same size as Int64.
+let maxInt = Int.max
+let maxInt64 = UInt64.max
+
