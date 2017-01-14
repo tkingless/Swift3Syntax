@@ -6,6 +6,8 @@
 //  Copyright © 2017 Swift3. All rights reserved.
 //
 
+//https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html is the reference
+
 import UIKit
 
 class ViewController: UIViewController {
