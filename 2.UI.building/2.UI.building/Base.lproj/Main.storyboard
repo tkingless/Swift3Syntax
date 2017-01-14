@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,8 +41,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzi-kR-qg0">
                                         <rect key="frame" x="0.0" y="66.5" width="65" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Set Label">
-                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.2588235438" green="0.75686275960000005" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -49,11 +51,19 @@
                                     <constraint firstAttribute="trailing" secondItem="6ty-Pf-5Xw" secondAttribute="trailing" id="cOW-ag-SSe"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="no_image" translatesAutoresizingMaskIntoConstraints="NO" id="4Ih-Jc-rCr">
+                                <rect key="frame" x="137.5" y="280" width="100" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Ih-Jc-rCr" secondAttribute="height" multiplier="1:1" priority="750" constant="8" id="8Ny-Qc-gbS"/>
+                                    <constraint firstAttribute="width" constant="100" id="L8A-QC-ene"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="a3H-rm-IzQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9bN-QR-qRO"/>
                             <constraint firstItem="a3H-rm-IzQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PTn-oy-j8s"/>
+                            <constraint firstItem="4Ih-Jc-rCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QBg-El-Skz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="a3H-rm-IzQ" secondAttribute="trailing" id="vh2-IH-koI"/>
                         </constraints>
                     </view>
@@ -63,4 +73,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="no_image" width="300" height="300"/>
+    </resources>
 </document>
