@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,27 +9,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Inital-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIplayground" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Inital" id="BYZ-38-t0r" customClass="ViewController" customModule="UIplayground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UVmap" translatesAutoresizingMaskIntoConstraints="NO" id="3Au-We-RRd" userLabel="Background">
-                                <rect key="frame" x="67" y="328" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UVmap" translatesAutoresizingMaskIntoConstraints="NO" id="3Au-We-RRd" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Au-We-RRd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="04L-1H-Vtd"/>
+                            <constraint firstItem="3Au-We-RRd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="91T-EY-QCC"/>
+                            <constraint firstItem="3Au-We-RRd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ro3-I6-eOn"/>
+                            <constraint firstItem="3Au-We-RRd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vB4-9O-ORC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="121.88905547226388"/>
+        </scene>
+        <!--Cloud-->
+        <scene sceneID="aAW-Oo-9rd">
+            <objects>
+                <viewController title="Cloud" id="bfs-3w-TxY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EE2-yo-mI2"/>
+                        <viewControllerLayoutGuide type="bottom" id="nEM-V7-Bcf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j0Q-D3-iX7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-HT-tSm">
+                                <rect key="frame" x="87" y="97" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0im-cA-gb9" userLabel="TextContainer">
+                                <rect key="frame" x="87" y="304" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seD-B9-OfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
