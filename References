@@ -1,0 +1,27 @@
+
+Asset Handling
+	- makeappicon.com
+	- https://developer.apple.com/ios/human-interface-guidelines/graphics/image-size-and-resolution/
+	- https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/index.html
+
+Autolayout/ Adaptivelayout
+	- https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/WorkingwithConstraintsinInterfaceBuidler.html#//apple_ref/doc/uid/TP40010853-CH10-SW1
+
+		Rules of Thumb
+		- The following guidelines will help you succeed with Auto Layout. There are undoubtedly a number of legitimate exceptions for each of these rules. However, if you decide to veer from them, pause and carefully consider your approach before proceeding.
+		- Never specify a view’s geometry using its frame, bounds, or center properties.
+		- Use stack views wherever possible
+		- Stack views manage the layout of their content, greatly simplifying the constraint logic needed for the rest of the layout. Resort to custom constraints only when a stack view doesn’t provide the behavior you need.
+		- Create constraints between a view and its nearest neighbor.
+		- If you have two buttons next to each other, constrain the leading edge of the second button to the trailing edge of the first. The second button generally should not have a constraint that reaches across the first button to the view’s edge.
+		- Avoid giving views a fixed height or width.
+		- The whole point of Auto Layout is to dynamically respond to changes. Setting a fixed size removes the view’s ability to adapt. However, you may want to set a minimum or maximum size for the view.
+		- If you are having trouble setting constraints, try using the Pin and Align tools. Although these tools can be somewhat slower than Control-dragging, they do let you verify the exact values and items involved before creating the constraint. This extra sanity check can be helpful, especially when you are first starting out.
+		- Be careful when automatically updating an item’s frame. If the item does not have enough constraints to fully specify its size and position, the update’s behavior is undefined. Views often disappear either because their height or width gets set to zero or because they are accidentally positioned off screen.
+		- You can always try to update an item’s frame, and then undo the change, if necessary.
+		- Make sure all the views in your layout have meaningful names. This makes it much easier to identify your views when using the tools.
+		-The system automatically names labels and buttons based on their text or title. For other views, you may need to set an Xcode specific label in the Identity inspector (or by double-clicking and editing the view’s name in the document outline).
+		Always use leading and trailing constraints instead of right and left.
+
+	- https://www.raywenderlich.com/113768/adaptive-layout-tutorial-in-ios-9-getting-started
+	- https://www.raywenderlich.com/50308/storyboards-tutorial-in-ios-7-part-1
