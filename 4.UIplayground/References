@@ -23,5 +23,11 @@ Autolayout/ Adaptivelayout
 		-The system automatically names labels and buttons based on their text or title. For other views, you may need to set an Xcode specific label in the Identity inspector (or by double-clicking and editing the view’s name in the document outline).
 		Always use leading and trailing constraints instead of right and left.
 
+	- https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/AnatomyofaConstraint.html#//apple_ref/doc/uid/TP40010853-CH9-SW1
+
+		Linear equation for anatomy of constraints
+
+	- https://developer.apple.com/videos/play/wwdc2016/222/ at 19:00, about Vary for traits
+
 	- https://www.raywenderlich.com/113768/adaptive-layout-tutorial-in-ios-9-getting-started
 	- https://www.raywenderlich.com/50308/storyboards-tutorial-in-ios-7-part-1
