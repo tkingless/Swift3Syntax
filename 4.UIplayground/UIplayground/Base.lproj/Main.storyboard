@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IEI-gd-4pB">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,22 +11,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item 2-->
+        <scene sceneID="7oj-CO-l4w">
+            <objects>
+                <viewController id="iDV-DV-B8A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F26-8B-F5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="sNw-Px-kyp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HJa-1I-qxI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.064481468872022552" green="1" blue="0.067434766105058275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="Friends" selectedImage="Friends" id="9n3-R5-6Sd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJD-oe-LZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1354" y="-285"/>
+        </scene>
+        <!--Finn-->
+        <scene sceneID="fHb-6P-NHX">
+            <objects>
+                <viewController id="PY7-Sg-tTD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LzR-Xe-DMy"/>
+                        <viewControllerLayoutGuide type="bottom" id="6mC-2V-cFV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c80-j6-ABc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.32725195539162655" blue="0.13966509348508227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Finn" image="Finn" badgeValue="3" selectedImage="Finn" id="y0k-sj-svF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOj-ac-0QC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1354" y="-940"/>
+        </scene>
         <!--Inital-->
+        <scene sceneID="As2-RG-zVF">
+            <objects>
+                <tabBarController title="Inital" id="IEI-gd-4pB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4lz-qh-teY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PY7-Sg-tTD" kind="relationship" relationship="viewControllers" id="pXS-51-npf"/>
+                        <segue destination="iDV-DV-B8A" kind="relationship" relationship="viewControllers" id="ZuR-bt-rhP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsn-IG-KVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2430" y="-698"/>
+        </scene>
+        <!--Dummy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Inital" id="BYZ-38-t0r" customClass="ViewController" customModule="UIplayground" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dummy" id="BYZ-38-t0r" customClass="ViewController" customModule="UIplayground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UVmap" translatesAutoresizingMaskIntoConstraints="NO" id="3Au-We-RRd" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRf-o0-rgD">
+                                <rect key="frame" x="121" y="205" width="133" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66656428295434067" green="0.96674730329949243" blue="0.84589254343450571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="NxtScene">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -39,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48.799999999999997" y="121.88905547226388"/>
+            <point key="canvasLocation" x="39" y="99"/>
         </scene>
         <!--Cloud-->
         <scene sceneID="aAW-Oo-9rd">
@@ -50,14 +116,14 @@
                         <viewControllerLayoutGuide type="bottom" id="nEM-V7-Bcf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="j0Q-D3-iX7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0im-cA-gb9" userLabel="TextContainer">
-                                <rect key="frame" x="0.0" y="247" width="320" height="321"/>
+                                <rect key="frame" x="0.0" y="287" width="375" height="380"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MA2-Tp-PfT">
-                                        <rect key="frame" x="18.5" y="20" width="284.5" height="84"/>
+                                        <rect key="frame" x="46" y="20" width="284.5" height="84"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="150"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -69,7 +135,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqL-Zk-7BO">
-                                        <rect key="frame" x="61" y="201.5" width="198.5" height="119.5"/>
+                                        <rect key="frame" x="89" y="260.5" width="198.5" height="119.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -122,7 +188,7 @@
                                 </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_small" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-HT-tSm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
                                 <color key="backgroundColor" red="0.0041186115704476833" green="0.83360153436660767" blue="0.99713188409805298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
@@ -209,6 +275,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Finn" width="30" height="30"/>
+        <image name="Friends" width="30" height="30"/>
         <image name="UVmap" width="1536" height="1536"/>
         <image name="cloud_small" width="300" height="196"/>
     </resources>

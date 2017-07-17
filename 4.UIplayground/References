@@ -31,3 +31,8 @@ Autolayout/ Adaptivelayout
 
 	- https://www.raywenderlich.com/113768/adaptive-layout-tutorial-in-ios-9-getting-started
 	- https://www.raywenderlich.com/50308/storyboards-tutorial-in-ios-7-part-1
+
+ViewController
+	- TabBar controller
+		icon size: 30px for 1x and 60px for 2x
+		-?? Image only gray scale???
