@@ -37,16 +37,23 @@ class FriendsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return friendData.count
+        return friendData.count + badFriendData.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell_ID", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell_ID", for: indexPath)
 
         // Configure the cell...
-        let frd = friendData[indexPath.row] as Friend
-        cell.textLabel?.text = frd.name
-        cell.detailTextLabel?.text = frd.interest
+        if(indexPath.row <= 2){
+            let frd = friendData[indexPath.row] as Friend
+            cell.textLabel?.text = frd.name
+            cell.detailTextLabel?.text = frd.interest
+        }else{
+            let badFrd = badFriendData[indexPath.row-3] as Friend
+            cell = tableView.dequeueReusableCell(withIdentifier: "BadFriendCell_ID", for: indexPath)
+            cell.textLabel?.text = badFrd.name
+            cell.detailTextLabel?.text = badFrd.interest
+        }
 
         return cell
     }

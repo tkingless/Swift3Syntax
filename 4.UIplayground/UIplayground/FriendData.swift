@@ -25,3 +25,8 @@ let friendData = [
     Friend(name:"Amy", interest: "Study", ratings: 3),
     Friend(name:"Jon", interest: "Running", ratings: 1),
     Friend(name:"Peter", interest: "Cooking", ratings: 2),]
+
+let badFriendData = [
+    Friend(name:"Yumi", interest: "Smoke", ratings: 3),
+    Friend(name:"Mok", interest: "Drinking", ratings: 1),
+    Friend(name:"Linda", interest: "Jumping", ratings: 2),]
