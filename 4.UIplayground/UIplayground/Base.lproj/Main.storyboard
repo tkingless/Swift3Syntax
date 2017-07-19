@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FriendCell" textLabel="M4G-Jj-kf4" detailTextLabel="oAV-hZ-ZPM" imageView="PDn-4l-HKd" style="IBUITableViewCellStyleSubtitle" id="5FE-eg-F03">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FriendCell_ID" textLabel="M4G-Jj-kf4" detailTextLabel="oAV-hZ-ZPM" imageView="PDn-4l-HKd" style="IBUITableViewCellStyleSubtitle" id="5FE-eg-F03">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5FE-eg-F03" id="706-Or-9fz">
