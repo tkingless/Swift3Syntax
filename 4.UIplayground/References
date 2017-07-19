@@ -36,3 +36,5 @@ ViewController
 	- TabBar controller
 		icon size: 30px for 1x and 60px for 2x
 		-?? Image only gray scale???
+	- Note the difference when newing a cocoa touch class and a swift file
+	- how .nib be used?
