@@ -37,24 +37,39 @@ class FriendsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return friendData.count + badFriendData.count
+//        return friendData.count + badFriendData.count
+        return friendData.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell_ID", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell_ID", for: indexPath)
 
         // Configure the cell...
-        if(indexPath.row <= 2){
-            let frd = friendData[indexPath.row] as Friend
-            cell.textLabel?.text = frd.name
-            cell.detailTextLabel?.text = frd.interest
-        }else{
-            let badFrd = badFriendData[indexPath.row-3] as Friend
-            cell = tableView.dequeueReusableCell(withIdentifier: "BadFriendCell_ID", for: indexPath)
-            cell.textLabel?.text = badFrd.name
-            cell.detailTextLabel?.text = badFrd.interest
-        }
+//        if(indexPath.row <= 2){
+//            let frd = friendData[indexPath.row] as Friend
+//            cell.textLabel?.text = frd.name
+//            cell.detailTextLabel?.text = frd.interest
+//        }else{
+//            let badFrd = badFriendData[indexPath.row-3] as Friend
+//            cell = tableView.dequeueReusableCell(withIdentifier: "BadFriendCell_ID", for: indexPath)
+//            cell.textLabel?.text = badFrd.name
+//            cell.detailTextLabel?.text = badFrd.interest
+//        }
 
+        let frd = friendData[indexPath.row] as Friend
+        
+        if let foundNameLabel = cell.viewWithTag(100) as? UILabel {
+            foundNameLabel.text = frd.name
+        }
+        
+        if let foundInterestLabel = cell.viewWithTag(101) as? UILabel {
+            foundInterestLabel.text = frd.interest
+        }
+        
+        if let ratingImg = cell.viewWithTag(102) as? UIImageView {
+            ratingImg.image = UIImage(named: "Friends")
+        }
+        
         return cell
     }
 
